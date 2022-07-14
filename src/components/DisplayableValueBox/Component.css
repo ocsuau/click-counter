@@ -1,0 +1,19 @@
+.displayable-value-container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    min-width: 20%;
+    height: 165px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid lightblue 3px;
+    border-radius: 10px;
+    
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: 100;
+    color: lightblue;
+}

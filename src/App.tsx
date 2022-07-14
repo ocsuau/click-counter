@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useState } from 'react';
+
+import Button from './components/Button/Component';
+import DisplayableValueBox from './components/DisplayableValueBox/Component';
+
 import './App.css';
+import reactLogo from './assets/images/logo192.png';
 
 function App() {
+  const [clicks, setClicks] = useState(0);
+
+  const handleClick = 
+    () => setClicks(clicks + 1);
+
+  const handleReset =
+    () => setClicks(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img
+        id="logo"
+        className='rotate'
+        src={reactLogo}
+        alt="React Logo" />
+
+      <DisplayableValueBox value={clicks} />
+
+      <Button onClick={handleClick} text='Click' />
+      <Button classNames='danger' text='Reset' onClick={handleReset} />
     </div>
   );
 }

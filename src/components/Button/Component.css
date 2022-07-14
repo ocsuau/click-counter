@@ -1,0 +1,31 @@
+.button {
+    width: 20%;
+    height: 50px;
+
+    margin-bottom: 20px;
+    
+    border: solid rgb(68, 68, 68) 3px;
+    border-radius: 10px;
+
+    font-family: sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+}
+
+.success {
+    background-color: rgb(60, 167, 60);
+}
+
+.success:hover {
+    background-color: rgb(96, 238, 96);
+}
+
+.danger {
+    background-color: rgb(185, 98, 86);
+}
+
+.danger:hover {
+    background-color: rgb(238, 112, 96);
+}
