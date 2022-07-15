@@ -1,12 +1,5 @@
-PROJECT_NAME=$1
-
-if [ -z "$PROJECT_NAME" ]
-  then
-    echo "No argument supplied"
-    exit 1
-fi
-
 BUILD_NUMBER=$RANDOM
+PROJECT_NAME=click-counter
 
 BUILD_IMAGE_NAME="${PROJECT_NAME}-build"
 BUILD_IMAGE="${BUILD_IMAGE_NAME}:${BUILD_NUMBER}"

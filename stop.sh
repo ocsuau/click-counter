@@ -1,1 +1,1 @@
-docker stop role-presentation
+docker stop click-counter
