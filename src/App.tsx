@@ -10,7 +10,7 @@ function App() {
   const [clicks, setClicks] = useState(0);
 
   const handleClick = 
-    () => setClicks(clicks + 1);
+    () => setClicks((currentClicks) => currentClicks + 1);
 
   const handleReset =
     () => setClicks(0);
