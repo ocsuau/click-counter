@@ -4,4 +4,4 @@ FROM $BASE_IMAGE AS base
 
 FROM nginx
 
-COPY --from=base /build/build /usr/share/nginx/html/
+COPY --from=base /source/build /usr/share/nginx/html/

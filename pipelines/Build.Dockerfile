@@ -1,6 +1,6 @@
 FROM node:16.16
 
-WORKDIR build
+WORKDIR source
 
 COPY ./package.json ./package.json
 COPY ./package-lock.json ./package-lock.json
